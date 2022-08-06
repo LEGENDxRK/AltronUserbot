@@ -10,10 +10,10 @@ from config import *
 async def dmraid(xspam: Client, e: Message):
       hero = await e.reply_text("» ᴜsᴀɢᴇ:\n !sraid 10 <ʀᴇᴘʟʏ ᴛᴏ ᴜsᴇʀ ᴏʀ ᴜsᴇʀɴᴀᴍᴇ>")   
       TheAltronX = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 2)
-      if len(TheAltronX) == 2:
-          ok = await xspam.get_users(TheAltronX[1])
+      if len(RkHacker) == 2:
+          ok = await xspam.get_users(RkHacker[1])
           id = ok.id
-          counts = int(TheAltronX[0])
+          counts = int(RkHacker[0])
           omp = await hero.edit_text("`sʀᴀɪᴅ sᴛᴀʀᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ`")
           await omp.delete()
           for _ in range(counts):
